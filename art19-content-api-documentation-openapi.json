@@ -1,0 +1,1113 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "ART19 Content",
+        "description": "The ART19 Content API conforms to the JSON-API specification. Details and examples can be found at http:\/\/jsonapi.org. <br\/><br\/>API requests <b>MUST<\/b> use the HTTP Accept header:<br\/><code>Accept: application\/vnd.api+json<\/code><br\/><br\/>API requests <b>MUST<\/b> be authenticated using the HTTP Authorization header: <br\/><code>Authorization: Token token=\"your-token\", credential=\"your-credential\"<\/code>",
+        "termsOfService": "https:\/\/art19.com\/business-terms"
+    },
+    "servers": [
+        "http:\/\/art19.com\/"
+    ],
+    "paths": {
+        "\/classification_inclusions": {
+            "get": {
+                "summary": "Fetch resource collection",
+                "description": "",
+                "operationId": "FetchResourceCollection",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ids[]",
+                        "in": "query",
+                        "description": "Filter by IDs"
+                    },
+                    {
+                        "name": "page[number]",
+                        "in": "query",
+                        "description": "Filter by page number"
+                    },
+                    {
+                        "name": "page[size]",
+                        "in": "query",
+                        "description": "Change page size"
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "Sort by created_at"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ClassificationInclusionDocument"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/classification_inclusions\/{id}": {
+            "get": {
+                "summary": "Fetch resource",
+                "description": "",
+                "operationId": "FetchResource",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "UUID"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ClassificationInclusionDocument"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/classifications": {
+            "get": {
+                "summary": "Fetch resource collection",
+                "description": "",
+                "operationId": "FetchResourceCollection",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ids[]",
+                        "in": "query",
+                        "description": "Filter by IDs"
+                    },
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "Filter by type"
+                    },
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "description": "Filter by value"
+                    },
+                    {
+                        "name": "page[number]",
+                        "in": "query",
+                        "description": "Filter by page number"
+                    },
+                    {
+                        "name": "page[size]",
+                        "in": "query",
+                        "description": "Change page size"
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "Sort by created_at"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ClassificationInclusionDocument"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/classifications\/{id}": {
+            "get": {
+                "summary": "Fetch resource",
+                "description": "",
+                "operationId": "FetchResource",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "UUID"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ClassificationInclusionDocument"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/credits": {
+            "get": {
+                "summary": "Fetch resource collection",
+                "description": "",
+                "operationId": "FetchResourceCollection",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ids[]",
+                        "in": "query",
+                        "description": "Filter by IDs"
+                    },
+                    {
+                        "name": "creditable_id",
+                        "in": "query",
+                        "description": "Filter by creditable_id"
+                    },
+                    {
+                        "name": "creditable_type",
+                        "in": "query",
+                        "description": "Filter by creditable_type"
+                    },
+                    {
+                        "name": "page[number]",
+                        "in": "query",
+                        "description": "Filter by page number"
+                    },
+                    {
+                        "name": "page[size]",
+                        "in": "query",
+                        "description": "Change page size"
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "Sort by created_at"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ClassificationInclusionDocument"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/credits\/{id}": {
+            "get": {
+                "summary": "Fetch resource",
+                "description": "",
+                "operationId": "FetchResource",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "UUID"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ClassificationInclusionDocument"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/images": {
+            "get": {
+                "summary": "Fetch resource collection",
+                "description": "",
+                "operationId": "FetchResourceCollection",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ids[]",
+                        "in": "query",
+                        "description": "Filter by IDs"
+                    },
+                    {
+                        "name": "page[number]",
+                        "in": "query",
+                        "description": "Filter by page number"
+                    },
+                    {
+                        "name": "page[size]",
+                        "in": "query",
+                        "description": "Change page size"
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "Sort by created_at"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ClassificationInclusionDocument"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/images\/{id}": {
+            "get": {
+                "summary": "Fetch resource",
+                "description": "",
+                "operationId": "FetchResource",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "UUID"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ClassificationInclusionDocument"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/episodes": {
+            "get": {
+                "summary": "Fetch resource collection",
+                "description": "",
+                "operationId": "FetchResourceCollection",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ids[]",
+                        "in": "query",
+                        "description": "Filter by IDs"
+                    },
+                    {
+                        "name": "page[number]",
+                        "in": "query",
+                        "description": "Filter by page number"
+                    },
+                    {
+                        "name": "page[size]",
+                        "in": "query",
+                        "description": "Change page size"
+                    },
+                    {
+                        "name": "series_id",
+                        "in": "query",
+                        "description": "Filter by Series"
+                    },
+                    {
+                        "name": "season_id",
+                        "in": "query",
+                        "description": "Filter by Season"
+                    },
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "description": "Filter by value"
+                    },
+                    {
+                        "name": "year",
+                        "in": "query",
+                        "description": "Filter by released_at year"
+                    },
+                    {
+                        "name": "month",
+                        "in": "query",
+                        "description": "Filter by released_at month"
+                    },
+                    {
+                        "name": "rss",
+                        "in": "query",
+                        "description": "Filter by RSS episodes only"
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "Sort by created_at"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ClassificationInclusionDocument"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/episodes\/{id}": {
+            "get": {
+                "summary": "Fetch resource",
+                "description": "",
+                "operationId": "FetchResource",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "UUID"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ClassificationInclusionDocument"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/episodes\/{id}\/next_sibling": {
+            "get": {
+                "summary": "Fetch next resource",
+                "description": "",
+                "operationId": "FetchNextResource",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "UUID"
+                    },
+                    {
+                        "name": "rss",
+                        "in": "query",
+                        "description": "Filter by RSS episodes only"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ClassificationInclusionDocument"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/episodes\/{id}\/previous_sibling": {
+            "get": {
+                "summary": "Fetch previous resource",
+                "description": "",
+                "operationId": "FetchPreviousResource",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "UUID"
+                    },
+                    {
+                        "name": "rss",
+                        "in": "query",
+                        "description": "Filter by RSS episodes only"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ClassificationInclusionDocument"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/media_assets": {
+            "get": {
+                "summary": "Fetch resource collection",
+                "description": "",
+                "operationId": "FetchResourceCollection",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ids[]",
+                        "in": "query",
+                        "description": "Filter by IDs"
+                    },
+                    {
+                        "name": "page[number]",
+                        "in": "query",
+                        "description": "Filter by page number"
+                    },
+                    {
+                        "name": "page[size]",
+                        "in": "query",
+                        "description": "Change page size"
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "Sort by created_at"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ClassificationInclusionDocument"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/media_assets\/{id}": {
+            "get": {
+                "summary": "Fetch resource",
+                "description": "",
+                "operationId": "FetchResource",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "UUID"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ClassificationInclusionDocument"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/networks": {
+            "get": {
+                "summary": "Fetch resource collection",
+                "description": "",
+                "operationId": "FetchResourceCollection",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ids[]",
+                        "in": "query",
+                        "description": "Filter by IDs"
+                    },
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "description": "Filter by value"
+                    },
+                    {
+                        "name": "page[number]",
+                        "in": "query",
+                        "description": "Filter by page number"
+                    },
+                    {
+                        "name": "page[size]",
+                        "in": "query",
+                        "description": "Change page size"
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "Sort by created_at"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ClassificationInclusionDocument"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/networks\/{id}": {
+            "get": {
+                "summary": "Fetch resource",
+                "description": "",
+                "operationId": "FetchResource",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "UUID"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ClassificationInclusionDocument"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/people": {
+            "get": {
+                "summary": "Fetch resource collection",
+                "description": "",
+                "operationId": "FetchResourceCollection",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ids[]",
+                        "in": "query",
+                        "description": "Filter by IDs"
+                    },
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "description": "Filter by value"
+                    },
+                    {
+                        "name": "page[number]",
+                        "in": "query",
+                        "description": "Filter by page number"
+                    },
+                    {
+                        "name": "exclude_ids[]",
+                        "in": "query",
+                        "description": "Filter by excluding ids"
+                    },
+                    {
+                        "name": "page[size]",
+                        "in": "query",
+                        "description": "Change page size"
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "Sort by created_at"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ClassificationInclusionDocument"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/people\/{id}": {
+            "get": {
+                "summary": "Fetch resource",
+                "description": "",
+                "operationId": "FetchResource",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "UUID"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ClassificationInclusionDocument"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/seasons": {
+            "get": {
+                "summary": "Fetch resource collection",
+                "description": "",
+                "operationId": "FetchResourceCollection",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ids[]",
+                        "in": "query",
+                        "description": "Filter by IDs"
+                    },
+                    {
+                        "name": "series_id",
+                        "in": "query",
+                        "description": "Filter by Series"
+                    },
+                    {
+                        "name": "page[number]",
+                        "in": "query",
+                        "description": "Filter by page number"
+                    },
+                    {
+                        "name": "page[size]",
+                        "in": "query",
+                        "description": "Change page size"
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "Sort by created_at"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ClassificationInclusionDocument"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/seasons\/{id}": {
+            "get": {
+                "summary": "Fetch resource",
+                "description": "",
+                "operationId": "FetchResource",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "UUID"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ClassificationInclusionDocument"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/series": {
+            "get": {
+                "summary": "Fetch resource collection",
+                "description": "",
+                "operationId": "FetchResourceCollection",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ids[]",
+                        "in": "query",
+                        "description": "Filter by IDs"
+                    },
+                    {
+                        "name": "network_id",
+                        "in": "query",
+                        "description": "Filter by Network"
+                    },
+                    {
+                        "name": "page[number]",
+                        "in": "query",
+                        "description": "Filter by page number"
+                    },
+                    {
+                        "name": "page[size]",
+                        "in": "query",
+                        "description": "Change page size"
+                    },
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "description": "Filter by value"
+                    },
+                    {
+                        "name": "sort",
+                        "in": "query",
+                        "description": "Sort by created_at"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ClassificationInclusionDocument"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/series\/{id}": {
+            "get": {
+                "summary": "Fetch resource",
+                "description": "",
+                "operationId": "FetchResource",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "UUID"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/ClassificationInclusionDocument"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "ClassificationInclusionDocument": {
+                "type": "object",
+                "properties": {
+                    "data": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "links": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "data": {
+                "type": "array"
+            },
+            "links": {
+                "type": "object",
+                "properties": {
+                    "self": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "first": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "last": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "prev": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "next": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "ClassificationInclusion": {
+                "type": "object",
+                "properties": {
+                    "data": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "ClassificationDocument": {
+                "type": "object",
+                "properties": {
+                    "data": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "links": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "Classification": {
+                "type": "object",
+                "properties": {
+                    "data": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "CreditDocument": {
+                "type": "object",
+                "properties": {
+                    "data": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "links": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "Credit": {
+                "type": "object",
+                "properties": {
+                    "data": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "ImageDocument": {
+                "type": "object",
+                "properties": {
+                    "data": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "links": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "Image": {
+                "type": "object",
+                "properties": {
+                    "data": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "EpisodesDocument": {
+                "type": "object",
+                "properties": {
+                    "data": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "links": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "Episode": {
+                "type": "object",
+                "properties": {
+                    "data": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "MediaAssetDocument": {
+                "type": "object",
+                "properties": {
+                    "data": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "links": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "MediaAsset": {
+                "type": "object",
+                "properties": {
+                    "data": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "NetworkDocument": {
+                "type": "object",
+                "properties": {
+                    "data": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "links": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "Network": {
+                "type": "object",
+                "properties": {
+                    "data": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "PersonDocument": {
+                "type": "object",
+                "properties": {
+                    "data": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "links": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "Person": {
+                "type": "object",
+                "properties": {
+                    "data": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "ResourceIdentifier": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "SeasonDocument": {
+                "type": "object",
+                "properties": {
+                    "data": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "links": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "Season": {
+                "type": "object",
+                "properties": {
+                    "data": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "SeriesDocument": {
+                "type": "object",
+                "properties": {
+                    "data": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "links": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "Series": {
+                "type": "object",
+                "properties": {
+                    "data": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            }
+        }
+    }
+}
