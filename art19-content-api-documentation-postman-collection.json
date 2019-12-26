@@ -1,0 +1,1031 @@
+{
+    "id": "ab547601acb49009153c73923418a42d",
+    "name": "ART19 Content API Documentation",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "6677fd2463ff596ea24257d61d76f68d",
+            "name": "Fetch resource collection",
+            "url": "http:\/\/art19.com\/\/classification_inclusions",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "ids[]",
+                    "description": "Filter by IDs",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page[number]",
+                    "description": "Filter by page number",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page[size]",
+                    "description": "Change page size",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "Sort by created_at",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "ab547601acb49009153c73923418a42d",
+            "rawModeData": ""
+        },
+        {
+            "id": "340c5e024754634af6f5413d9fdecf0a",
+            "name": "Fetch resource",
+            "url": "http:\/\/art19.com\/\/classification_inclusions\/{id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "UUID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "ab547601acb49009153c73923418a42d",
+            "rawModeData": ""
+        },
+        {
+            "id": "0bf8c9548cd61c86b30d490c655afb95",
+            "name": "Fetch resource collection",
+            "url": "http:\/\/art19.com\/\/classifications",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "ids[]",
+                    "description": "Filter by IDs",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "type",
+                    "description": "Filter by type",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "q",
+                    "description": "Filter by value",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page[number]",
+                    "description": "Filter by page number",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page[size]",
+                    "description": "Change page size",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "Sort by created_at",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "ab547601acb49009153c73923418a42d",
+            "rawModeData": ""
+        },
+        {
+            "id": "815e455bf409d1a01c0b0d16e5bc20a9",
+            "name": "Fetch resource",
+            "url": "http:\/\/art19.com\/\/classifications\/{id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "UUID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "ab547601acb49009153c73923418a42d",
+            "rawModeData": ""
+        },
+        {
+            "id": "6645f2dce57737622d86f648cb48f84b",
+            "name": "Fetch resource collection",
+            "url": "http:\/\/art19.com\/\/credits",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "ids[]",
+                    "description": "Filter by IDs",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "creditable_id",
+                    "description": "Filter by creditable_id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "creditable_type",
+                    "description": "Filter by creditable_type",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page[number]",
+                    "description": "Filter by page number",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page[size]",
+                    "description": "Change page size",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "Sort by created_at",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "ab547601acb49009153c73923418a42d",
+            "rawModeData": ""
+        },
+        {
+            "id": "e37e1e369e490b61e1819fd163300225",
+            "name": "Fetch resource",
+            "url": "http:\/\/art19.com\/\/credits\/{id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "UUID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "ab547601acb49009153c73923418a42d",
+            "rawModeData": ""
+        },
+        {
+            "id": "982fd78928e5a6fb18cfd7d2ce07942d",
+            "name": "Fetch resource collection",
+            "url": "http:\/\/art19.com\/\/images",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "ids[]",
+                    "description": "Filter by IDs",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page[number]",
+                    "description": "Filter by page number",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page[size]",
+                    "description": "Change page size",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "Sort by created_at",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "ab547601acb49009153c73923418a42d",
+            "rawModeData": ""
+        },
+        {
+            "id": "98944b83452e8138cdbc6f7198888d3c",
+            "name": "Fetch resource",
+            "url": "http:\/\/art19.com\/\/images\/{id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "UUID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "ab547601acb49009153c73923418a42d",
+            "rawModeData": ""
+        },
+        {
+            "id": "67668298d61d2acd31e1384305b40ef2",
+            "name": "Fetch resource collection",
+            "url": "http:\/\/art19.com\/\/episodes",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "ids[]",
+                    "description": "Filter by IDs",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page[number]",
+                    "description": "Filter by page number",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page[size]",
+                    "description": "Change page size",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "series_id",
+                    "description": "Filter by Series",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "season_id",
+                    "description": "Filter by Season",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "q",
+                    "description": "Filter by value",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "year",
+                    "description": "Filter by released_at year",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "month",
+                    "description": "Filter by released_at month",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "rss",
+                    "description": "Filter by RSS episodes only",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "Sort by created_at",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "ab547601acb49009153c73923418a42d",
+            "rawModeData": ""
+        },
+        {
+            "id": "fbef7f0557b10c432078e20e0e436f6f",
+            "name": "Fetch resource",
+            "url": "http:\/\/art19.com\/\/episodes\/{id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "UUID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "ab547601acb49009153c73923418a42d",
+            "rawModeData": ""
+        },
+        {
+            "id": "27e5dce2b21a9e86a4fd7758cb7985be",
+            "name": "Fetch next resource",
+            "url": "http:\/\/art19.com\/\/episodes\/{id}\/next_sibling",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "UUID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "rss",
+                    "description": "Filter by RSS episodes only",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "ab547601acb49009153c73923418a42d",
+            "rawModeData": ""
+        },
+        {
+            "id": "c5aca695fe1b765c4cfe6cade21472ed",
+            "name": "Fetch previous resource",
+            "url": "http:\/\/art19.com\/\/episodes\/{id}\/previous_sibling",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "UUID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "rss",
+                    "description": "Filter by RSS episodes only",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "ab547601acb49009153c73923418a42d",
+            "rawModeData": ""
+        },
+        {
+            "id": "f379d7e27596fd212aae8b33cfea0c7d",
+            "name": "Fetch resource collection",
+            "url": "http:\/\/art19.com\/\/media_assets",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "ids[]",
+                    "description": "Filter by IDs",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page[number]",
+                    "description": "Filter by page number",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page[size]",
+                    "description": "Change page size",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "Sort by created_at",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "ab547601acb49009153c73923418a42d",
+            "rawModeData": ""
+        },
+        {
+            "id": "a7b5cdb6c8c84452f826209f76bb74c0",
+            "name": "Fetch resource",
+            "url": "http:\/\/art19.com\/\/media_assets\/{id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "UUID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "ab547601acb49009153c73923418a42d",
+            "rawModeData": ""
+        },
+        {
+            "id": "922d1784e5a3aa53e4f4486930d56b84",
+            "name": "Fetch resource collection",
+            "url": "http:\/\/art19.com\/\/networks",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "ids[]",
+                    "description": "Filter by IDs",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "q",
+                    "description": "Filter by value",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page[number]",
+                    "description": "Filter by page number",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page[size]",
+                    "description": "Change page size",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "Sort by created_at",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "ab547601acb49009153c73923418a42d",
+            "rawModeData": ""
+        },
+        {
+            "id": "9ef73ea7750999567a52ce1d79717226",
+            "name": "Fetch resource",
+            "url": "http:\/\/art19.com\/\/networks\/{id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "UUID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "ab547601acb49009153c73923418a42d",
+            "rawModeData": ""
+        },
+        {
+            "id": "8a63d5d211adfc43dc918f477bbf2dd0",
+            "name": "Fetch resource collection",
+            "url": "http:\/\/art19.com\/\/people",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "ids[]",
+                    "description": "Filter by IDs",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "q",
+                    "description": "Filter by value",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page[number]",
+                    "description": "Filter by page number",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "exclude_ids[]",
+                    "description": "Filter by excluding ids",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page[size]",
+                    "description": "Change page size",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "Sort by created_at",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "ab547601acb49009153c73923418a42d",
+            "rawModeData": ""
+        },
+        {
+            "id": "2900c6462d8598afe0ec52723d94d878",
+            "name": "Fetch resource",
+            "url": "http:\/\/art19.com\/\/people\/{id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "UUID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "ab547601acb49009153c73923418a42d",
+            "rawModeData": ""
+        },
+        {
+            "id": "4a3a45b584b8f7acf998f5cff6f3311d",
+            "name": "Fetch resource collection",
+            "url": "http:\/\/art19.com\/\/seasons",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "ids[]",
+                    "description": "Filter by IDs",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "series_id",
+                    "description": "Filter by Series",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page[number]",
+                    "description": "Filter by page number",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page[size]",
+                    "description": "Change page size",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "Sort by created_at",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "ab547601acb49009153c73923418a42d",
+            "rawModeData": ""
+        },
+        {
+            "id": "334b20dde4ee453018c5c13fecfc256c",
+            "name": "Fetch resource",
+            "url": "http:\/\/art19.com\/\/seasons\/{id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "UUID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "ab547601acb49009153c73923418a42d",
+            "rawModeData": ""
+        },
+        {
+            "id": "3a3768b386df3166e185b32bd599874d",
+            "name": "Fetch resource collection",
+            "url": "http:\/\/art19.com\/\/series",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "ids[]",
+                    "description": "Filter by IDs",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "network_id",
+                    "description": "Filter by Network",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page[number]",
+                    "description": "Filter by page number",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page[size]",
+                    "description": "Change page size",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "q",
+                    "description": "Filter by value",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sort",
+                    "description": "Sort by created_at",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "ab547601acb49009153c73923418a42d",
+            "rawModeData": ""
+        },
+        {
+            "id": "2d313caeb4299e16699b23e9e77655a6",
+            "name": "Fetch resource",
+            "url": "http:\/\/art19.com\/\/series\/{id}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "id",
+                    "description": "UUID",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "ab547601acb49009153c73923418a42d",
+            "rawModeData": ""
+        }
+    ]
+}
